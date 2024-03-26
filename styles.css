@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --pr-Pink: #ff52bf;
+    --pr-Light-Pink: #ff8fd8;
+    --pr-Light-Red: #ff4242;
+
+    --se-Very-Dark-Cyan: #00252e;
+    --se-Very-Pale-Blue: #f5faff;
+}
+
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Main Style */
+body {
+    font-family: 'Opens Sans', sans-serif;
+    width: 100%;
+    color: var(--se-Very-Dark-Cyan);
+    font-size: 14px;
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 5%;
+}
+
+.logo_superior img {
+    width: 100px;
+}
+
+
+.button_navbar button {
+    font-size: .7rem;
+    height: 30px;
+    width: 90px;
+    color: var(--pr-Light-Pink);
+    border-radius: 20px;
+    border: solid 2px var(--pr-Light-Pink);
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.built {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5vw 5vw;
+    text-align: center;
+}
+
+.built h2 {
+    font-family: 'Poppins', sans-serif;
+    padding-block: 15px;
+}
+
+.built p {
+    line-height: 25px;
+    padding-bottom: 20px;
+}
+
+.button_get button {
+    height: 40px;
+    width: 200px;
+    border-radius: 20px;
+    border: none;
+    color: #ffffff;
+    font-weight: 700;
+    background-color: var(--pr-Pink);
+    cursor: pointer;
+}
+
+.button_get button:hover {
+    background-color: var(--pr-Light-Pink);
+}
+
+.image_one_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image_one_container img {
+    width: 60%;
+}
+
+.stats {
+    padding-block: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.stats h1 {
+    font-size: 68px;
+    padding-bottom: 10px;
+}
+
+.logo_container img {
+    width: 36px;
+}
+
+.stats p {
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+    font-family: 'Poppins';
+    text-align: center;
+}
+
+.grow,
+.flowing,
+.users {
+    padding-block: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+.flowing {
+    flex-direction: row;
+}
+
+.image_two_container,
+.info_two,
+.image_three_container,
+.info_three,
+.image_four_container,
+.info_four {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50vw;
+}
+
+.image_two_container,
+.image_three_container,
+.image_four_container {
+    align-items: center;
+}
+
+.info_two,
+.info_three,
+.info_four {
+    padding-inline: 7%;
+}
+
+.info_two h2,
+.info_three h2,
+.info_four h2,
+.ready h1 {
+    font-family: 'Poppins';
+    padding-bottom: 20px ;
+}
+
+.info_two p,
+.info_three p,
+.info_four p {
+    line-height: 20px;
+    font-weight: 500;
+}
+
+.image_two_container img,
+.image_three_container img,
+.image_four_container img {
+    width: 80%;
+}
+
+.ready {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.newsletter,
+.contact {
+    padding: 5vw 4vw 0 4vw;
+    height: 500px;
+    color: #ffffff;
+    background-color: var(--se-Very-Dark-Cyan);
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-family: 'Open Sans';
+}
+
+.newsletter p {
+    padding-top: 15px;
+    padding-bottom: 30px;
+    line-height: 23px;
+}
+
+.input_container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input_container input {
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    border: none;
+    font-size: 25px;
+    text-align: center;
+}
+
+.input_container button {
+    height: 45px;
+    width: 50%;
+    align-self: flex-end;
+    border-radius: 5px;
+    border: 1px var(--pr-Pink);
+    background-color: var(--pr-Pink);
+    color: #ffffff;
+    font-weight: 600;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.input_container button:hover {
+    background-color: var(--pr-Light-Pink);
+}
+
+.logo_botton img {
+    width: 200px;
+}
+
+.contact p {
+    padding: 15px 0 40px 0;
+}
+
+.phone,
+.email {
+    height: 36px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.phone p,
+.email p {
+    transform: translateY(15%);
+}
+
+.social_medias {
+    padding-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.social_medias img {
+    width: 25px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    body {
+        text-align: center;
+    }
+
+    .built {
+        height: 430px;
+        padding-inline: 25px;
+        font-size: 16px;
+    }
+
+    .built h2 {
+        padding-bottom: 28px;
+    }
+
+    .built p {
+        line-height: 22px;
+        padding-bottom: 50px;
+        padding-inline: 0;
+    }
+
+    .image_one_container,
+    .image_two_container,
+    .image_three_container,
+    .image_four_container {
+        width: 100%;
+    }
+
+    .image_one_container img,
+    .image_two_container img,
+    .image_three_container img,
+    .image_four_container img {
+        width: 75%;
+    }
+
+    .stats,
+    .grow,
+    .flowing,
+    .users,
+    .ready {
+        width: 100%;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 100px;
+        padding-inline: 0;
+    }
+
+    .info_two p,
+    .info_three p,
+    .info_four p {
+    line-height: 20px;
+    font-weight: 500;
+    padding-inline: 0%;
+
+    }
+    .logo_container img {
+        transform: translateX(-190%);
+    }
+
+    .grow,
+    .flowing,
+    .users {
+        gap: 70px;
+    }
+
+    .info_two,
+    .info_three,
+    .info_four {
+        padding-inline: 30px;
+        width: 100%;
+    }
+
+    .ready {
+        gap: 50px;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .newsletter,
+    .contact {
+        padding: 30px 35px 10px 30px;
+    }
+
+}
